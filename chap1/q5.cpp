@@ -10,6 +10,10 @@ bool one_edit_away(string str1, string str2)
 
 	if (abs(str1_length() - str2_length()) > 1)
 		return false;
+	
+	str1_len = str1_length();
+	str2_len = str2_length();
+
 
 	if (str2_len > str1_len) //take str1 as bigger string
 		swap(str1, str2);
