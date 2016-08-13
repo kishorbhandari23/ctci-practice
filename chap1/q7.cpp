@@ -42,6 +42,7 @@ void rotate(int* matrix, int n)
 	}
 }
 
+
 void rotateMatrix(int* matrix, int n) 
 {
 	for (int layer = 0; layer < n/2; layer++)
@@ -75,7 +76,6 @@ void rotateMatrix(int* matrix, int n)
 
 int main()
 {
-
 	int matrix[5][5] = { { 1,2,3,4,5 },{6,7,8,9,10 },{11,12,13,14,15 },{16,17,18,19,20 },{21,22,23,24,25}};
 	int* matrixPtr = (int*)matrix;
 	cout << "Original Matrix" << endl;
@@ -84,3 +84,4 @@ int main()
 	rotateMatrix(matrixPtr, 5);
 	printmatrix(matrixPtr, 5, 5);
 }
+
